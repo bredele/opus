@@ -4,9 +4,11 @@
   "description": "peer codec to set opus as the preferred audio codec.",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+  },
   "development": {
-    "bredele/peer": "*"
+    "bredele/peer": "*",
+    "bredele/video": "~0.0.2"
   },
   "license": "MIT",
   "main": "index.js",

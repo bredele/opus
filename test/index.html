@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rate</title>
+</head>
+<body>
+	<video class="skype"></video>
+	<script src="../build/build.js"></script>
+	<script>
+	  var peer = require('peer');
+	  var video = require('video');
+	  var opus = require('opus');
+
+	  var master = peer();
+	  master.codec(opus);
+	  master.use(video('.skype'));
+
+	  master.on('stream', function() {
+	  	master.create();
+	  	master.offer();
+	  });
+
+	  master.on('offer', function(offer) {
+	  	master.local(offer);
+	  	console.log(master.connection.localDescription.sdp);
+	  });
+	</script>
+</body>
+</html>
