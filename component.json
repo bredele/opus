@@ -1,0 +1,16 @@
+{
+  "name": "opus",
+  "repo": "bredele/opus",
+  "description": "peer codec to set opus as the preferred audio codec.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {
+    "bredele/peer": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
