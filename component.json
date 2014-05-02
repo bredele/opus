@@ -2,10 +2,9 @@
   "name": "opus",
   "repo": "bredele/opus",
   "description": "peer codec to set opus as the preferred audio codec.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [],
-  "dependencies": {
-  },
+  "dependencies": {},
   "development": {
     "bredele/peer": "*",
     "bredele/video": "~0.0.2"
